@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #cfcfcf;
+}
+
+.card__holder {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.read-more-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: rgb(101, 0, 184);
+  display: block;
+  cursor: pointer;
+}
+
+.read-more-contents {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s;
+}
+
+.read-more-text {
+  overflow: hidden;
+}
+
+.show {
+  grid-template-rows: 1fr;
+}
